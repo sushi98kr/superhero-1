@@ -1,0 +1,244 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.nav{
+    overflow: hidden;
+     /* border-top: 50% solid transparent;
+    border-left: 100% solid rgb(102, 94, 94);
+    border-bottom: 50% solid transparent;  */
+    
+    border-top: 7vh solid red;
+    border-right: 30vh solid transparent;
+    font-family: Arial;
+    background-color: rgb(41, 40, 40);
+    
+    width: 30%;
+    height: 10%;
+    border-bottom-right-radius: 30%;
+    
+    
+}
+.logo img{
+  width: 7%;
+  height: 6%;
+  border-radius: 50%;
+  margin: 0%;
+}
+  .nav a {
+    float: left;
+    font-size: 16px;
+    color: rgb(252, 252, 255);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+/* #triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-left: 100px solid transparent;
+  } */
+  .top{
+    background: url('img/sky2.jpg');
+    width: 100%;
+  }
+  .nav a:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 14px;
+  }
+  .first-half {
+    width: 70%;
+  }
+  .first-half img{
+    width: 58%;
+    height:58%;
+    -webkit-animation: flash linear 2s infinite;
+    animation: flash linear 2s infinite;
+    position: relative;
+    animation-name: first;
+    animation-duration: 6s;
+  }
+  
+  @keyframes first {
+    0%   {left:0px; top:0px;}
+    100%  { left:300px; top:0px;}
+  
+  }
+  .main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .sec-half{
+    width: 30%;
+  
+    
+    position: relative;
+    animation-name: sec;
+    animation-duration: 7s;
+    animation-delay: 6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  @keyframes sec {
+    0%   { left:0px; top:0px;}
+   
+    75%  { left:0px; top:100px;}
+    100% { left:0px; top:0px;}
+  }
+  .sec-half h2{
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 5vw Georgia, serif;
+    
+  }
+  .sec-half p{
+    text-shadow: 1px 1px 2px rgb(102, 27, 4), 0 0 1.5em rgb(248, 9, 9), 0 0 0.8em rgb(229, 255, 0);
+    color: rgb(253, 251, 241);
+    font: 0.9vw Georgia, serif;
+  }
+  .sec-half button{
+    width: 43%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/cloud1.jpg');
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-style: bold;
+    font-size:90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .sec-half button:hover {
+    background:url('img/sky1.jpg');
+    color: antiquewhite;
+  }
+  .coll-image img,p,h3{
+    float :left;
+  width: 22.33%;
+  padding: 2% 2%;
+  margin-left: 20%;
+  font-family: Arial;
+  
+  
+  }
+  #co1 ,#co2,#co3{
+    
+    background-color: rgb(53, 27, 27);
+     
+    border-top: 7vw solid rgb(253, 14, 14);
+    border-right: 20vw solid transparent;
+
+    margin-top: 0%;
+    border-bottom: 6vw solid rgb(240, 237, 237);
+    border-left: 3vw solid transparent;
+  }
+  .coll1 p,h3{
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 1vw Georgia, serif;
+  }
+  /* .coll1{
+        width: 30%;
+        height:30% ;
+        padding: 5% 15%;
+        
+              }
+              .coll1 p h3{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              } */
+.coll1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type=text], select, textarea{
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+}
+
+
+input[type=submit] {
+  background-color: #a3dcee;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.cont-form{
+  border-radius: 5px;
+width: 50%;
+  background:url('img/superhero1.jpg');
+  padding: 20px;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contact-con{
+  display: flex;
+background: url('img/sky1.jpg')
+}
+.cont-sec{
+  width: 50%;
+  float: left;
+}
+.col a{
+  display: inline-block;
+  display: flex;
+  margin: 15%;
+  font:1.9vw;
+}
+.ig-btn,.Youtube-btn,.twitter-btn{
+  background-color:white;
+  border-radius: 20%;
+}
+.connect-link{
+  margin: 5%;
+  
+  text-shadow: 1px 1px 2px rgb(102, 27, 4), 0 0 1.5em rgb(248, 9, 9), 0 0 0.8em rgb(229, 255, 0);
+  color: rgb(253, 251, 241);
+  font: 1.9vw Georgia, serif;
+}
